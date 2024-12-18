@@ -1,0 +1,22 @@
+<div class="board">
+  <div class="column todo">
+    <h2>A Fazer</h2>
+    <div class="tasks">
+      <app-task *ngFor="let task of getTodoTasks()" [task]="task"></app-task>
+    </div>
+  </div>
+
+  <div class="column doing">
+    <h2>Fazendo</h2>
+    <div class="tasks">
+      <app-task *ngFor="let task of getDoingTasks()" [task]="task"></app-task>
+    </div>
+  </div>
+
+  <div class="column done">
+    <h2>Concluído</h2>
+    <div class="tasks">
+      <app-task *ngFor="let task of getDoneTasks()" [task]="task"></app-task>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="task" (click)="togglePopup()">
+  <h3>{{ task.title }}</h3>
+  <p>{{ task.description }}</p>
+</div>
+
+<div class="popup-overlay" [class.show]="showPopup" (click)="togglePopup()">
+  <div class="popup-content" (click)="$event.stopPropagation()">
+    <button class="close-button" (click)="togglePopup()">×</button>
+    <img src="https://i.ibb.co/71DmSxN/image.png" alt="Placeholder" style="width: 100%; margin-bottom: 20px;">
+    <div class="popup-text">
+      <h3>AVISO AO GRUPO</h3>
+      <p>
+        Avisamos que, por falta de aviso, não avisaremos o aviso que era pra avisar, portanto, fiquem avisados deste aviso que avisamos.
+      </p>
+      <p>
+        Avisem aos outros grupos sobre esse aviso, pra que todos fiquem avisados.
+      </p>
+      <p>
+        Qualquer dúvida só avisar
+      </p>
+    </div>
+  </div>
+</div>

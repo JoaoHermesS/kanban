@@ -1,0 +1,38 @@
+.task {
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.task h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.task p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.popup-text {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.popup-text h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.popup-text p {
+  margin-bottom: 10px;
+}
